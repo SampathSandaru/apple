@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+
+    <span>
+        <div class="translate" id="google_translate_element"></div>
+
+            <script type="text/javascript">
+                function googleTranslateElementInit() {  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');}
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </span>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            background: url('bg2.jpg');
+        }
+
+        .div1{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .msg-box {
+            width: 40rem;
+            height: 10rem;
+            display: grid;
+            grid-template-rows: 50px;
+
+            background: rgba(238, 236, 236, 0.479);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .msg-box .top {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 6fr 1fr;
+            align-items: center;
+
+            background: rgba(255, 255, 255, 0.548);
+            border-radius: 15px 15px 0 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .msg-box .top span {
+            opacity: .7;
+        }
+
+        .msg-box .msg {
+            display: grid;
+            align-items: center;
+
+            width: 100%;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.4rem;
+            padding: 0rem;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .msg-box .top .top-1 {
+            display: grid;
+            grid-template-columns: 1fr 8fr;
+            align-items: center;
+
+        }
+
+        .msg-box .top .top-1 .img_box {
+            width: 40px;
+            height: 40px;
+            margin-left: .4rem;
+        }
+
+        .msg-box .top .top-1 .img_box img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .msg-box .top .time{
+            text-align: center;          
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <div class="msg-box">
+            <div class="top">
+                <div class="top-1">
+                    <div class="img_box">
+                        <img src="apple_msg_icon.png">
+                    </div>
+                    <div class="title">
+                        <span>NEW MESSAGE</span>
+                    </div>
+                </div>
+                <span class="time">now</span>
+            </div>
+            <div class="msg">
+                දුකක් කියන්නවත් හිතට  හරියන කෙනෙක් නැති එකත් දුකක්.
+                පාඩුවෙ ඉන්න අයට තමයි සමහරු කතා හදන්නෙ වැඩි පුර.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
